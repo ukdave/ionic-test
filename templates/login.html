@@ -1,0 +1,22 @@
+<ion-view view-title="Sign-In">
+	<ion-content>
+		<form ng-submit="login()">
+			<div class="list list-inset">
+				<label class="item item-input">
+					<i class="icon ion-person placeholder-icon" style="width: 20px;"></i>
+					<input type="text" placeholder="Username" ng-model="creds.username" />
+				</label>
+				<label class="item item-input">
+					<i class="icon ion-key placeholder-icon" style="width: 20px;"></i>
+					<input type="password" placeholder="Password" ng-model="creds.password" />
+				</label>
+			</div>
+			<p class="padding assertive" ng-show="authenticationError">
+				<strong>Authentication failure!</strong> Please check your credentials and try again.
+			</p>
+			<div class="padding">
+				<button type="submit" class="button button-block button-positive" ng-disabled="!creds.username || !creds.password">Sign-In</button>
+			</div>
+		</form>
+	</ion-content>
+</ion-view>

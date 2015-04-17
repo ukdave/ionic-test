@@ -1,0 +1,12 @@
+<ion-view view-title="ToDo">
+	<ion-nav-buttons side="secondary">
+		<button class="button button-clear" ng-click="logout()">Logout</button>
+	</ion-nav-buttons>
+	<ion-content>
+		<ion-list>
+			<ion-item class="" type="item-text-wrap" ng-repeat="item in todo" ui-sref="todoItem({itemId: item.id})" nav-direction="forward">
+				{{item.title}}
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
