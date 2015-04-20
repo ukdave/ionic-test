@@ -6,9 +6,9 @@ angular.module('myApp')
 
 			// setup an abstract state for the tabs directive
 			.state('tab', {
-				url: "/tab",
+				url: '/tab',
 				abstract: true,
-				templateUrl: "templates/tabs.html"
+				templateUrl: 'tabs.html'
 			})
 
 			// Each tab has its own nav history stack:
@@ -16,7 +16,7 @@ angular.module('myApp')
 				url: '/dash',
 				views: {
 					'tab-dash': {
-						templateUrl: 'templates/tab-dash.html',
+						templateUrl: 'scripts/app/tabs/tab-dash.html',
 						controller: 'DashCtrl'
 					}
 				}
@@ -25,7 +25,7 @@ angular.module('myApp')
 				url: '/chats',
 				views: {
 					'tab-chats': {
-						templateUrl: 'templates/tab-chats.html',
+						templateUrl: 'scripts/app/tabs/tab-chats.html',
 						controller: 'ChatsCtrl'
 					}
 				}
@@ -34,7 +34,7 @@ angular.module('myApp')
 				url: '/chats/:chatId',
 				views: {
 					'tab-chats': {
-						templateUrl: 'templates/chat-detail.html',
+						templateUrl: 'scripts/app/tabs/chat-detail.html',
 						controller: 'ChatDetailCtrl'
 					}
 				}
@@ -43,7 +43,7 @@ angular.module('myApp')
 				url: '/account',
 				views: {
 					'tab-account': {
-						templateUrl: 'templates/tab-account.html',
+						templateUrl: 'scripts/app/tabs/tab-account.html',
 						controller: 'AccountCtrl'
 					}
 				}
