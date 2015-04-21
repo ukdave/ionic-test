@@ -9,6 +9,10 @@ angular.module('myApp')
 			$ionicViewSwitcher.nextDirection('exit');
 			$state.go('login');
 		};
+
+		$scope.sayHello = function() {
+			$scope.greeting = 'Hello';
+		};
 	})
 
 
